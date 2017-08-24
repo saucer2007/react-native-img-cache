@@ -230,7 +230,7 @@ export class CachedImage extends BaseCachedImage<CachedImageProps> {
 
     render() {
         const props = this.getProps();
-        return <Image {...props}>{this.props.children}</Image>;
+        return <Image {...props}>{this.state.path?this.props.children:this.props.placeholder}</Image>;
     }
 }
 
