@@ -141,7 +141,7 @@ export class ImageCache {
 
 export interface CachedImageProps extends ImageProperties {
     mutable?: boolean;
-
+    placeholder?: Component<any, any>
 }
 
 export interface CustomCachedImageProps extends CachedImageProps {
